@@ -23,11 +23,11 @@ $(document).ready(function () {
 
             // 選取.動畫({參數}，{選項})
             $("#test").animate({
-            num : 777                           // 數字
+            num : 777                                       // 數字
             }, {
-                duration: 2000,                 // 時間
-                step: (now) => {                // 步驟
-                    $("#test").text(now);       // 文字(步驟)
+                duration: 2000,                             // 時間
+                step: (now) => {                            // 步驟
+                    $("#test").text(Math.floor(now));       // 文字(步驟) - Math.floor() 去小數點
                 }
             })
         }
